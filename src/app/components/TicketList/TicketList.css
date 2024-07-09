@@ -1,0 +1,45 @@
+.ticket-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    gap: 1em;
+}
+
+.search-bar {
+    display: flex;
+    gap: 1em;
+}
+
+.ticket-status {
+    display: block;
+    border-radius: 50px;
+    padding: 3px 10px;
+}
+
+
+.ticket-status.assigned {
+    background-color: #d8eafa;
+    color: #02458e;
+}
+
+.ticket-status.completed {
+    background-color: #d4edda;
+    color: #025c17;
+}
+
+.ticket-status.unassigned {
+    background-color: #fff3cd;
+    color: #695102;
+}
+
+.ticket-item:hover {
+    background-color: #f1f1f1;
+}
